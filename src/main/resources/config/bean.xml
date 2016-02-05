@@ -1,14 +1,16 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-	<bean id="car" class="com.zplcod.Car" 
-		 init-method="init"
-		 destroy-method="myDestory"
-		 p:color="red"
-		 p:speed="200" 
-		 scope="singleton"
-		 />  
- 
+    <bean id="car" class="com.zplcod.Car"
+          init-method="init"
+          destroy-method="myDestory"
+          p:color="red"
+          p:speed="200"
+          p:brand="宝马"
+          scope="singleton"
+    />
+    <bean id="MyBeanPostProcessor" class="com.zplcod.MyBeanPostProcessor"/>
+    <bean id="MyBeanFactoryPostProcessor" class="com.zplcod.MyBeanFactoryPostProcessor"/>
 
 </beans>

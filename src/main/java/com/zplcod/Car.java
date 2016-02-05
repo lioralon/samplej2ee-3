@@ -51,7 +51,7 @@ public class Car implements BeanFactoryAware, BeanNameAware, InitializingBean,
 	// <Bean> xml's initialization-method
 	public void init() {
 		System.out.println("speed set to 120km");
-		this.speed = "120";
+		this.speed = "800";
 	}
 
 	// <Bean> xml's destroy-method
